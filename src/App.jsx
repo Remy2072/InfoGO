@@ -3,7 +3,7 @@ import "./Scss/App.scss";
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import Home from "./Containers/Home/Home";
 import Login from "./Containers/Login/Login";
-import Navigation from "./Components/Navigation/navigation";
+import Navigation from "./Components/Navigation/Navigation";
 import bg from "./Assets/bg.png";
 import { useUserContext } from "./Components/User/UserProvider";
 
