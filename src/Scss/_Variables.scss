@@ -1,7 +1,17 @@
 // Colors
 $black: #000;
 $white: #ffffff;
-$orange: #f07d20;
+$gray: #CBC7C4;
+$light-gray: #f4f4f4;
+
+$dark-green: #196666;
+$blue: #4CB2BE;
+$light-blue: #45D6DA;
+
+$orange: #D86D0C;
+$light-orange: #F88125;
+$yellow: #FFCC00;
+
 
 $font--primary: "Poppins";
 $font--secondary: "";
@@ -39,7 +49,7 @@ $line-height--button: 24;
 $s-font-size--h1: 30;
 $s-line-height--h1: 33;
 
-$s-font-size--h2:24;
+$s-font-size--h2: 24;
 $s-line-height--h2: 28;
 
 $s-font-size--h3: 20;
@@ -64,11 +74,11 @@ $s-font-size--button: 14;
 $s-line-height--button: 18;
 
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1240px,
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1240px,
 );
 
 $screen-sm: #{map-get($grid-breakpoints, sm)};

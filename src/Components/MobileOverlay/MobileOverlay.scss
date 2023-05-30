@@ -1,0 +1,33 @@
+@import "../../Scss/Variables";
+
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $dark-green;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mobile-overlay-content {
+    background-color: $blue;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 80%;
+  }
+  
+  .mobile-overlay h2 {
+    margin-top: 0;
+    color: $white;
+  }
+  
+  .mobile-overlay p {
+    margin-bottom: 0;
+  }
+  
+  

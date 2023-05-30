@@ -4,87 +4,48 @@
 .sidenav {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    background-color: #f4f4f4;
-    width: 20rem;
     align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 24rem;
+    background-color: #f4f4f4;
 
     &__logo {
         margin-top: 2.5rem;
         width: 16rem;
     }
 
-    &__popUpWrapper {
-        margin-top: auto;
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
-
-    &__button {
-        margin-top: auto;
-        background-color: #cbc7c4;
-        border: 5px solid $white;
-        border-radius: 1.25rem;
-        font-size: 1.875rem;
-        text-transform: uppercase;
-        width: 90%;
-        line-height: 2.188rem;
-
-        @include font--primary(500);
-    }
-
-    &__button:hover {
-        background-color: $orange;
-        border: 5px solid $orange;
-    }
-
-    &__popUp {
-        border: 5px solid $orange;
-        background-color: $white;
-        padding: 50px;
-        color: $white;
-        font-weight: 500;
-        width: 30%;
-        height: fit-content;
-        display: none;
-        position: absolute;
-        right: -8rem;
-        top: 0;
-    }
-
-    &__popUp.active {
-        display: initial;
-    }
-
     &__list {
-        margin-top: 15px;
-        width: 100%;
+        width: 18.75rem;
         display: flex;
         flex-direction: column;
 
         &-item {
-            border-top: solid 1px $black;
-        }
-
-        &-item:last-of-type a {
-            color: $orange;
-        }
-
-        &-item:hover {
-            background-color: $orange;
+            display: flex;
+            justify-content: center;
         }
 
         &-item a {
-            line-height: 3.75rem;
-            color: #707070;
-            font-size: 2.188rem;
-            padding: 1rem;
+            color: #686868;
+            font-size: 1.6rem;
+            padding: 1.5rem 1.25rem;
+            display: block;
+            background-color: #dddddd;
+            border: 5px solid $white;
+            border-radius: 1.25rem;
+            width: 90%;
+            transition: 250ms;
 
-            @include font--primary(500);
+            @include font--primary(600);
         }
 
-        &-item:hover a {
+        &-item:nth-child(4) a {
+            background-color: $white;
+            border: 5px solid #707070;
+        }
+
+        &-item a:hover {
+            background-color: #707070;
             color: $white;
         }
     }
