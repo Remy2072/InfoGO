@@ -1,12 +1,46 @@
+@import "../../Scss/Variables";
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-.bigbox {
-    border:15px solid red;
+.activeLesson {
+    border:15px solid $yellow;
     border-radius: 10px;
     width: 100%;
     background-color: white;
+    height: 84%;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+
+        &-title {
+            color: #707070;
+            font-size: 1.75rem;
+            font-weight: 400;
+        }
+
+        &-button {
+            background-color: $orange;
+            color: $white;
+            width: 12.5rem;
+            height: 2.813rem;
+            font-size: 1.563rem;
+            border: none;
+            border-radius: 10px;
+            margin-top: 1.25rem;
+        }
+
+        &-button:hover {
+            border: solid 1px $orange;
+            background-color: $white;
+            color: $orange;
+        }
+    }
 }
