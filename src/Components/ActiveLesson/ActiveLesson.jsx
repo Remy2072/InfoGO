@@ -1,8 +1,11 @@
 import React from 'react'
+import "./ActiveLesson.scss";
 
 function ActiveLesson() {
   return (
-    <div>ActiveLesson</div>
+    <section class="bigbox">
+      <div>Ac</div>
+    </section>
   )
 }
 

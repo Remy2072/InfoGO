@@ -3,12 +3,12 @@ import "./NewLesson.scss";
 
 function NewLesson() {
   return (
-<section class="bigbox">
-            <div class="grid-container">
+<section class="newLesson">
+            <div class="newLesson__container">
 
                 <div class="type">
                     <h3>Type les</h3>
-                    <div class="typeWrapper">
+                    <div class="type__wrapper">
 
                         <label class="group">
                             <div>
@@ -31,7 +31,7 @@ function NewLesson() {
 
                 <div class="subject">
                     <h3>Onderwerp les</h3>
-                    <div class="subjectWrapper">
+                    <div class="subject__wrapper">
 
                         <label class="text">
                             <input type="text" placeholder="Type hier de titel van de les" />
@@ -55,7 +55,7 @@ function NewLesson() {
 
                 <div class="publish">
                     <h3>Publish</h3>
-                    <div class="publishWrapper">
+                    <div class="publish__wrapper">
 
                         <div class="save">
                             <div>

@@ -1,192 +1,189 @@
 @import "../../Scss/Variables";
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-.bigbox {
-    border:15px solid #196666;
-    border-radius: 10px;
-    width: 100%;
-    background-color: white;
-}
-
-.grid-container {  
-  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30% 30% 30%;
-    padding: 15px;
-    gap: 20px 20px;
-    grid-auto-flow: row;
-    grid-template-areas: 
-    "type pins"
-    "subject pins"
-    "publish pins"; 
-  }
-
-  .type  {
-    padding: 20px;
-    grid-area: type;  
-    background-color: #DDDDDD;
-    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
-    color: #5A5A5A;
- 
+    color: #5a5a5a;
 }
 
-.typeWrapper {
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
-}
-
-.group {
-    display: flex;
-    width: 280px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
+.newLesson {
+    border: 15px solid $dark-green;
     border-radius: 10px;
-    padding: 10px;    
+    width: 100%;
+    background-color: $white;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30% 30% 30%;
+        padding: 15px;
+        gap: 20px 20px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "type pins"
+            "subject pins"
+            "publish pins";
+    }
 }
 
-.group p {
-    font-size: 25px;
+.type {
+    padding: 1.25rem;
+    grid-area: type;
+    background-color: $dark-gray;
+    border-radius: 1.25rem;
+
+    &__wrapper {
+        display: flex;
+        margin-top: 1.25rem;
+        justify-content: space-between;
+    }
+
+    .group {
+        display: flex;
+        width: 17.5rem;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $white;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .group p {
+        font-size: 1.563rem;
+    }
+
+    .group box-icon {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .indu {
+        display: flex;
+        width: 17.5rem;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $white;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .indu p {
+        font-size: 1.563rem;
+    }
+
+    .indu box-icon {
+        width: 5rem;
+        height: 5rem;
+    }
 }
 
-.group box-icon {
-    width: 80px;
-    height: 80px;
-}
-
-.indu {
-    display: flex;
-    width: 280px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px;    
-}
-
-.indu p {
-    font-size: 25px;
-}
-
-.indu box-icon {
-    width: 80px;
-    height: 80px;
-}
-
-.subject { 
+.subject {
     grid-area: subject;
-    background-color: #DDDDDD;
-    border-radius: 20px;
-    padding: 20px;
+    background-color: $dark-gray;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+
+    &__wrapper {
+        display: flex;
+        margin-top: 1.25rem;
+        justify-content: space-between;
+    }
+
+    .text {
+        width: 13.125rem;
+        height: 5rem;
+    }
+
+    .text input {
+        width: 17.5rem;
+        height: 6.25rem;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .dropdown {
+        width: 17.5rem;
+        height: 6.25rem;
+        background-color: $white;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #5a5a5a;
+    }
+
+    .dropdown input {
+        background-color: $dark-gray;
+        padding: 2px;
+        font-size: 14px;
+    }
+
+    .dropdown p {
+        margin-top: 10px;
+        text-align: center;
+    }
 }
 
-.subjectWrapper {
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
+.publish {
+    grid-area: publish;
+    background-color: $dark-gray;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+
+    &__wrapper {
+        display: flex;
+        margin-top: 1.25rem;
+        justify-content: space-between;
+    }
+
+    .save {
+        background-color: $white;
+        padding: 1.25rem;
+        border-radius: 10px;
+        width: 15.625rem;
+        height: 6.25rem;
+    }
+
+    .save div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .save p {
+        font-size: 16px;
+        color: #5a5a5a;
+        margin-bottom: 0.2rem;
+    }
+
+    .save button {
+        border: none;
+        background-color: $dark-gray;
+        width: 9.375rem;
+        height: 1.875rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .save button:hover {
+        background-color: #196666;
+        transition: 250ms;
+        color: $white;
+    }
 }
 
-.text {
-    width: 210px;
-    height: 80px;
-}
-
-.text input {
-    width: 280px;
-    height: 100px;
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 16px;
-}
-
-.dropdown {
-    width: 280px;
-    height: 100px;
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #5A5A5A;
-}
-
-.dropdown input {
-    background-color: #DDDDDD;
-    padding: 2px;
-    font-size: 14px;
-}
-
-.dropdown p {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.publish { 
-    grid-area: publish; 
-    background-color: #DDDDDD;
-    border-radius: 20px;
-    padding: 20px;
-}
-
-.publishWrapper {
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
-}
-
-.save {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    height: 100px;
-}
-
-.save div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.save p {
-    font-size: 16px;
-    color: #5A5A5A;
-    margin-bottom: 0.2rem;
-}
-
-.save button {
-    border: none;
-    background-color: #DDDDDD;
-    width: 150px;
-    height: 30px;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.save button:hover {
-    background-color: #196666;
-    transition: 250ms;
-    color: white;
-}
-
-
-
-.pins { 
-    grid-area: pins; 
-    background-color: #DDDDDD;
-    border-radius: 20px;
+// Moet nog gemaakt worden
+.pins {
+    grid-area: pins;
+    background-color: $dark-gray;
+    border-radius: 1.25rem;
 }
