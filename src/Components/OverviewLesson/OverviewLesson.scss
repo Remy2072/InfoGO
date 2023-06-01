@@ -1,0 +1,70 @@
+@import "../../Scss/Variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.overviewLesson {
+    border:15px solid $orange;
+    border-radius: 10px;
+    width: 100%;
+    background-color: white;
+    height: 84%;
+    padding: 1.25rem;
+    overflow: hidden;
+
+    &__container {
+        display: grid; 
+        border-radius: 1.25rem;
+        background-color: #DDDDDD;
+        padding: 1.25rem;
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 2.5rem 2.5rem; 
+        grid-template-areas: 
+          ". . ."
+          ". . ."
+          ". . .";
+        overflow-y: auto; 
+        height: fit-content;
+        min-height: fit-content;
+
+          &-item {
+            background-color: $white;
+            border-radius: 1.25rem;
+            padding: 1.375rem 1.875rem;
+
+
+            img {
+                width: 100%;
+                border-radius: 5px;
+                margin-bottom: 7px;
+            }
+
+            h3 {
+                font-size: 1.375rem;
+                font-weight: 600;
+                color: #707070;
+                margin-bottom: 7px;
+            }
+
+            p {
+                color: #707070;
+                line-height: 1.188rem;
+                font-weight: 200;
+                font-size: 15px;
+                margin-bottom: 1.875rem;
+            }
+
+            time {
+                color: #707070;
+                font-weight: 500;
+            }
+
+          }
+    }
+    
+}

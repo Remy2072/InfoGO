@@ -66,8 +66,15 @@ function NewLesson() {
                     </div>
                 </div>
 
-                <div className="pins"></div>
-
+                <div className="pins">
+                    <ul className="pins__list">
+                        <li className="pins__list-item">
+                            <strpmg className="pins__list-item-title">Pin</strpmg>
+                            <button className="pins__list-item-button"><box-icon  color="#fff" name='x'></box-icon></button>
+                            </li>
+                    </ul>
+                    <button className="pins__button">Voeg pin toe</button>
+                </div>
             </div>
         </section>
   )

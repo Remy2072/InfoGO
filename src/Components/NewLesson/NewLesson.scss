@@ -192,9 +192,96 @@
     }
 }
 
-// Moet nog gemaakt worden
 .pins {
     grid-area: pins;
     background-color: $dark-gray;
     border-radius: 1.25rem;
+    padding: 1.25rem;
+    line-height: initial;
+
+    &__list {
+        counter-reset: pin;
+
+        &-item {
+            background-color: #707070;
+            width: 100%;
+            border-radius: 1.813rem;
+            padding: 5px;
+            color: $white;
+            display: flex;
+            gap: 10px;
+            font-size: 1.813rem;
+            font-weight: 200;
+            margin-bottom: 1.25rem;
+            display: flex;
+            cursor: pointer;
+            transition: 250ms;
+
+            &-title {
+                flex: 1;
+            }
+
+            &-button {
+                background-color: transparent;
+                border: none;
+                justify-content: center;
+                align-items: center;
+                line-height: initial;
+                margin: 0 10px;
+                display: none;
+            }
+        }
+
+        &-item::before {
+            counter-increment: pin;
+            content: counter(pin);
+            background-color: $white;
+            color: #707070;
+            width: 2.719rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            border-radius: 100%;
+        }
+
+        &-item:hover {
+            background-color: #5a5a5a;
+        }
+
+        &-item:hover .pins__list-item-button {
+            display: flex;
+        }
+    }
+
+    &__button {
+        background-color: #707070;
+        width: 100%;
+        border-radius: 1.813rem;
+        padding: 5px;
+        color: $white;
+        display: flex;
+        gap: 10px;
+        font-size: 1.813rem;
+        font-weight: 200;
+        border: none;
+        align-items: center;
+    }
+
+    &__button:hover {
+        background-color: #5a5a5a;
+    }
+
+    &__button::before {
+        content: "+";
+        height: 2.719rem;
+        background-color: $white;
+        color: #707070;
+        width: 2.719rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        border-radius: 100%;
+    }
 }
