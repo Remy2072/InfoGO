@@ -1,6 +1,6 @@
 import React, {useRef} from "react";
 import "./Login.scss";
-import logo from "../../Assets/logo.svg";
+import logo from "../../Assets/logo2.svg";
 import {useUserContext} from "../../Components/User/UserProvider";
 import {useNavigate} from "react-router-dom";
 

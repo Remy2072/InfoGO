@@ -29,7 +29,7 @@ function OverviewLesson() {
         </div>
 
         <div className='overviewLesson__container-item'>
-          <img src={foto} alt="Rijksmuseum" />
+          <img  src={foto} alt="Rijksmuseum" />
           <h3>Architectuur</h3>
           <p>Architectuur is de kunst en wetenschap van het ontwerpen  van de gebouwde omgeving; steden, …</p>
           <time>Aangemaakt op: 18-03-2023</time>

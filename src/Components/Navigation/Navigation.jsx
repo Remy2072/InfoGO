@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Navigation.scss";
-import logo from "../../Assets/logo.svg";
+import logo from "../../Assets/logo1.svg";
 import { useLocation } from "react-router-dom";
 
 function Navigation() {
