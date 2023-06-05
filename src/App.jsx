@@ -14,12 +14,12 @@ function App() {
     const loc = useLocation();
     const navigate = useNavigate();
 
-    useEffect(() => {
-        console.log(loc.pathname.includes("login"), loggedIn);
-        if (loggedIn) return;
-        if (loc.pathname.includes("login")) return;
-        navigate("/login");
-    }, [loc]);
+    // useEffect(() => {
+    //     console.log(loc.pathname.includes("login"), loggedIn);
+    //     if (loggedIn) return;
+    //     if (loc.pathname.includes("login")) return;
+    //     navigate("/login");
+    // }, [loc]);
 
     return (
         <>
