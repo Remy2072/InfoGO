@@ -52,6 +52,10 @@
             }
         }
 
+        &-item:last-of-type {
+            margin-bottom: 8px;
+        }
+
         &-item:hover {
             background-color: $light-orange;
             color: $white;

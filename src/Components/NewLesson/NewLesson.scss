@@ -10,14 +10,16 @@
     border: 15px solid $dark-green;
     border-radius: 10px;
     width: 100%;
+    height: 84%;
     background-color: $white;
 
     &__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 30% 30% 30%;
+        grid-template-rows: 1fr 1fr 1fr;
         padding: 15px;
         gap: 20px 20px;
+        height: 100%;
         grid-auto-flow: row;
         grid-template-areas:
             "type pins"
@@ -53,6 +55,12 @@
         border-radius: 10px;
         padding: 10px;
         cursor: pointer;
+        border: 5px solid transparent;
+        transition: 250ms;
+    }
+
+    .group:hover {
+        border: 5px solid $dark-green;
     }
 
     .group p {
@@ -73,6 +81,12 @@
         border-radius: 10px;
         padding: 10px;
         cursor: pointer;
+        border: 5px solid transparent;
+        transition: 250ms;
+    }
+
+    .indu:hover {
+        border: 5px solid $dark-green;
     }
 
     .indu p {
