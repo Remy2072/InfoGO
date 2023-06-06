@@ -47,7 +47,7 @@ function Rapports() {
                             <p>45min</p>
                         </div>
                     </div>
-                    <time>Aangemaakt op: 17-03-2023</time>
+                    <time>Aangemaakt op: 16-03-2023</time>
                   </div>
               </div>
 
@@ -67,7 +67,7 @@ function Rapports() {
                             <p>30min</p>
                         </div>
                     </div>
-                    <time>Aangemaakt op: 17-03-2023</time>
+                    <time>Aangemaakt op: 15-03-2023</time>
                   </div>
               </div>
 
@@ -87,7 +87,7 @@ function Rapports() {
                             <p>29min</p>
                         </div>
                     </div>
-                    <time>Aangemaakt op: 17-03-2023</time>
+                    <time>Aangemaakt op: 14-03-2023</time>
                   </div>
               </div>
 
@@ -107,7 +107,7 @@ function Rapports() {
                             <p>59min</p>
                         </div>
                     </div>
-                    <time>Aangemaakt op: 17-03-2023</time>
+                    <time>Aangemaakt op: 14-03-2023</time>
                   </div>
               </div>
 
@@ -127,7 +127,7 @@ function Rapports() {
                             <p>37min</p>
                         </div>
                     </div>
-                    <time>Aangemaakt op: 17-03-2023</time>
+                    <time>Aangemaakt op: 12-03-2023</time>
                   </div>
               </div>
               </div>
